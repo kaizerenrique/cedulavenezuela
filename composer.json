@@ -1,0 +1,20 @@
+{
+    "name": "kaizerenrique/cedulavenezuela",
+    "description": "consulta la informacion asociada a un numero de cedula en el cne y el ivss",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kaizerenrique\\Cedulavenezuela\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kaizerenrique",
+            "email": "kayserenrique@gmail.com"
+        }
+    ]
+}

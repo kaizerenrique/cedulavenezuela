@@ -54,7 +54,7 @@ public function ivssPension($nac, $ci, $d1, $m1, $y1)
 	public function cuentaIndividual($nac, $ci, $d, $m, $y)
 ```
 
-## Autores ✒️
+#### Autores ✒️
 * [kaizerenrique](https://github.com/kaizerenrique)
 
-## 📝 Licencia
+#### 📝 Licencia

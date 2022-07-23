@@ -243,7 +243,3 @@ class ConsultaCedula{
     }
 
 }
-
-Dia de Nacimiento 
-Mes de Nacimiento
-Año de Nacimiento 

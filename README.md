@@ -3,6 +3,9 @@
 
 Es un paquete desarrollado en PHP, desarrollada para poder consultas datos personales de los Habitantes de Venezuela registrados en el CNE y en el IVSS.
 
+### Requiere de
+* [guzzlehttp/guzzle: ^7.4](https://packagist.org/packages/guzzlehttp/guzzle)
+
 ### Instalación 
 ```php
 composer require kaizerenrique/cedulavenezuela

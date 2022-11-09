@@ -18,7 +18,7 @@ class ConsultaCedula{
 	public function consultar($nac, $ci)
 	{
 		try {
-			$url = 'http://www.cne.gov.ve/web/registro_electoral/ce.php?nacionalidad=';
+			$url = 'www.cne.gob.ve/web/registro_electoral/ce.php?nacionalidad=';
 			$response = Http::get($url.$nac.'&cedula='.$ci);
 
 			$respuesta = $response->getBody()->getContents();// accedemos a el contenido
@@ -96,7 +96,7 @@ class ConsultaCedula{
 			return $datoJson;
         
 	    } catch (\Illuminate\Http\Client\ConnectionException $e) {
-	        report($e);	 
+	        //report($e);	 
 	        return false;
 	    }
 
@@ -123,7 +123,7 @@ class ConsultaCedula{
     public function ivssPension($nac, $ci, $d1, $m1, $y1)
     {
     	try {
-	    	$url = 'http://www.ivss.gob.ve:28080/Pensionado/PensionadoCTRL?boton=Consultar&nacionalidad=';
+	    	$url = 'www.ivss.gob.ve:28080/Pensionado/PensionadoCTRL?boton=Consultar&nacionalidad=';
 
 	    	$response = Http::get(
 				$url.$nac.'&cedula='.$ci.'&d1='.$d1.'&m1='.$m1.'&y1='.$y1);
@@ -187,7 +187,7 @@ class ConsultaCedula{
         
         return $datoJson;
         } catch (\Illuminate\Http\Client\ConnectionException $e) {
-	        report($e);	 
+	        //report($e);	 
 	        return false;
 	        
 	    }
@@ -207,7 +207,7 @@ class ConsultaCedula{
     public function cuentaIndividual($nac, $ci, $d, $m, $y)
     {
     	try {
-	    	$url = 'http://www.ivss.gob.ve:28083/CuentaIndividualIntranet/CtaIndividual_PortalCTRL?nacionalidad_aseg=';
+	    	$url = 'www.ivss.gob.ve:28083/CuentaIndividualIntranet/CtaIndividual_PortalCTRL?nacionalidad_aseg=';
 
 	    	$response = Http::get(
 				$url.$nac.'&cedula_aseg='.$ci.'&d='.$d.'&m='.$m.'&y='.$y);
@@ -235,7 +235,7 @@ class ConsultaCedula{
 	    	return $datoJson;
 
 		} catch (\Illuminate\Http\Client\ConnectionException $e) {
-	        report($e);	 
+	        //($e);	 
 	        return false;
 	        
 	    }
